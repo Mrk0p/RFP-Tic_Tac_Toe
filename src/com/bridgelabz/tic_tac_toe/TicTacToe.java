@@ -49,6 +49,7 @@ public class TicTacToe {
             board[position] = userLetter;
             showBoard();
             makeMove();
+            checkFreeSpace();
         }
     }
     public static void main(String[] args)
@@ -58,6 +59,28 @@ public class TicTacToe {
         showBoard();
         makeMove();
 
+    }
+    private static void checkFreeSpace()
+    {
+        boolean isSpaceAvailable = false;
+        int numOfFreeSpaces = 0;
+        for(int index=1;index<board.length;index++)
+        {
+            if((board[index] == ' '))
+            {
+                isSpaceAvailable = true;
+                numOfFreeSpaces++;
+            }
+        }
+        if(isSpaceAvailable == false)
+        {
+            System.err.println("Board is full! You can't make another move");
+
+        }
+        else
+        {
+            System.out.println("Free space is available! you have "+numOfFreeSpaces+ " moves left");
+        }
     }
 
 }
