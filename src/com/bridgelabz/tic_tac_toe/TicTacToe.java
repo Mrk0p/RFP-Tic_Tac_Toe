@@ -100,6 +100,7 @@ public class TicTacToe {
             System.out.println("User starts to play first");
         }
     }
+    // in this method we can find the winner of the game 
     private static void winner()
     {
         if ((board[1] == userLetter && board[2] == userLetter && board[3] == userLetter) ||
