@@ -1,6 +1,7 @@
 package com.bridgelabz.tic_tac_toe;
 
 public class TicTacToe {
+    // create an array 
     static char[] board = new char[10];
 
     private static void createEmptyBoard()
