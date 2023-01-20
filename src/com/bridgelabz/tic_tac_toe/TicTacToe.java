@@ -85,6 +85,8 @@ public class TicTacToe {
             System.out.println("Free space is available! you have "+numOfFreeSpaces+ " moves left");
         }
     }
+    
+    // first player move by using random 
     private static void checkFirstPlayer()
     {
         int Head = 0;
