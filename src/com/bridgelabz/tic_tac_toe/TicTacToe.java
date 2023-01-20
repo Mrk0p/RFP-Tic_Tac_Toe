@@ -109,6 +109,8 @@ public class TicTacToe {
             System.exit(0);
         }
     }
+    
+    // computer turm by using random 
     private static void computerTurn()
     {
         int computerMove;
