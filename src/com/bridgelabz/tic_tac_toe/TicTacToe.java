@@ -21,6 +21,8 @@ public class TicTacToe {
         userLetter = scanner.next().toUpperCase().charAt(0);
         computerLetter = (userLetter == 'X') ? 'O' : 'X';
     }
+    
+    // display the tic tac toe board by using println
     private static void showBoard()
     {
         System.out.println( board[1] + " | " + board[2] + " | " + board[3] );
