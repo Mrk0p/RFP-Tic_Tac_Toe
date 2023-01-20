@@ -60,6 +60,8 @@ public class TicTacToe {
         makeMove();
 
     }
+    
+    // check the free space after user move 
     private static void checkFreeSpace()
     {
         boolean isSpaceAvailable = false;
