@@ -29,6 +29,8 @@ public class TicTacToe {
         System.out.println("----------");
         System.out.println( board[7] + " | " + board[8] + " | " + board[9] );
     }
+    
+    // make a move by choose number between X or O
     private static void makeMove()
     {
         Scanner scanner = new Scanner(System.in);
